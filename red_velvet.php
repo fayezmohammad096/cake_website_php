@@ -25,6 +25,18 @@
 
 
 ?>
+<!-- delete method -->
+<?php
+  if(isset($_GET['delete'])){
+    $id = $_GET['delete'];
+
+    $query = "DELETE FROM red_velvet WHERE id=$id";
+    $deltequery = mysqli_query($conn,$query);
+    if($deltequery){
+      echo "Data Deleted Successfully";
+    }
+  }
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -41,7 +53,7 @@
       <!-- header content -->
       <div class="p-5 bg-primary text-white text-center">
   <h1>CAKE HAVEN</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <p>Choice your lexury flavor</p> 
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -128,10 +140,12 @@
                 <td><?php echo $after_disc_selling;?></td>
                 <td><?php echo $profit_loss;?> taka</td>
                 <td><?php echo $profit_loss_in_perc;?> %</td>
-                <td></td>
+                <td> <a type="submit" class="btn btn-danger" href="red_velvet.php?delete=<?php echo $id;?>">Delete </a></td><!--change-->
                 <td></td>
             </tr>
-            <?php }} ?>
+            <?php }}else{
+              echo "No Data Found";
+            } ?>
         </table>
     </div>
 

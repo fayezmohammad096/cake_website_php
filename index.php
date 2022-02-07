@@ -15,9 +15,9 @@
 </head>
 <body>
       <!-- header content -->
-      <div class="p-5 bg-primary text-white text-center">
+  <div class="p-5 bg-primary text-white text-center">
   <h1>CAKE HAVEN</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <p>Choice your lexury flavor</p> 
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
