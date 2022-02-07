@@ -63,6 +63,9 @@
         <a class="nav-link active" href="index.php">Home</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="black_forest.php">Black Forest</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="vanilla.php">Vanilla</a>
       </li>
       <li class="nav-item">

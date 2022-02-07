@@ -27,6 +27,9 @@
         <a class="nav-link active" href="index.php">Home</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="black_forest.php">Black Forest</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="vanilla.php">Vanilla</a>
       </li>
       <li class="nav-item">
@@ -57,15 +60,67 @@
   <a href="lemon_spong.php" class="list-group-item list-group-item-action ">Lemon Sponge Cake</a>
   <a href="vanilla.php" class="list-group-item list-group-item-action">Vanilla cake</a>
   <a href="chocolate.php" class="list-group-item list-group-item-action ">Chocolate Cake</a>
-</div>
-
-
-     
-
-      <hr class="d-sm-none">
     </div>
 
+ </div>
+    <div class="col-8">
+    <!-- <div class="container">
+        <table class="table table-bordered  table-striped ">
+            <tr style="background-color:#0d6efd">
+                <th>Cake Flavor</th>
+                <th>Total Cost</th>
+                <th>Regular Price</th>
+                <th>Discount Price</th>
+                <th>After Disc Selling</th>
+                <th>Profit/loss</th>
+                <th>Profit/Loss in perc</th>
+              
+            </tr>
+            <?php
+                $query = "SELECT * FROM black_forest";
+                $readquery = mysqli_query($conn,$query);
+                if($readquery->num_rows >0){
+                    while($read_data = mysqli_fetch_assoc($readquery)){
+                        $id = $read_data['id'];
+                        $row_cost  = $read_data['row_cost'];
+                        $transport_cost  = $read_data['transport_cost'];
+                        $space_cost = $read_data['space_cost'];
+                        $staff_cost = $read_data['staff_cost'];
+                        $utility_cost = $read_data['utility_cost'];
+                        $selling_price = $read_data['selling_price'];
+                        $discount_price = $read_data['discount_price'];
+
+                        $total_cost = ($row_cost+$transport_cost+$space_cost+ $staff_cost+$utility_cost);// regular making cost totle 
+
+                        $regular_price =$selling_price;//------seeling price
+                        $disc_price = $regular_price- (($regular_price *$discount_price)/100);
+                        $after_disc_selling = $disc_price * 5;//change
+                        $profit_loss =$disc_price - $total_cost;
+
+                        $profit_loss_in_perc = (($disc_price- $total_cost)*100)/$total_cost;
+ 
+                
+            ?>
+            <tr>
+                <td>Black Forest</td>
+                <td><?php echo $total_cost;?></td>
+                <td><?php echo $regular_price;?></td>
+                <td><?php echo $disc_price;?></td>
+                <td><?php echo $after_disc_selling;?></td>
+                <td><?php echo $profit_loss;?> taka</td>
+                <td><?php echo $profit_loss_in_perc;?> %</td>
+               
+            </tr>
+            <?php }}else{
+              echo "No Data Found";
+            } ?>
+        </table>
+    </div> -->
+
+ </div>
+
   </div>
+  
 </div>
 
 <div class="mt-5 p-4 bg-dark text-white text-center">

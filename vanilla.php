@@ -63,6 +63,9 @@
         <a class="nav-link active" href="index.php">Home</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="black_forest.php">Black Forest</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="vanilla.php">Vanilla</a>
       </li>
       <li class="nav-item">
@@ -86,9 +89,9 @@
             <input class="form-control" type="number" name="transport_cost" id="transport_cost" placeholder="Enter Transport Cost">
             <input class="form-control" type="number" name="space_cost" id="space_cost" placeholder="Enter Space Cost">
             <input class="form-control" type="number" name="staff_cost" id="staff_cost" placeholder="Enter Staff Cost">
-            <input class="form-control" type="number" name="utility_cost" id="utility_cost" placeholder="Utility Cost in %">
+            <input class="form-control" type="number" name="utility_cost" id="utility_cost" placeholder="Utility Cost 3%">
             <input class="form-control" type="number" name="selling_price" id="selling_price" placeholder="Enter Selling price">
-            <input class="form-control" type="number" name="discount_price" id="discount_price" placeholder="Discount in %"><br> <br> <br>
+            <input class="form-control" type="number" name="discount_price" id="discount_price" placeholder="Discount 5%"><br> <br> <br>
             
             <input class="btn btn-success" type="submit" name="btn" value="send">
         </form>
